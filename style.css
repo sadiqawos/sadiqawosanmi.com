@@ -153,25 +153,6 @@ footer {
           user-select: none;
 }
 
-.Logo .img {
-  /*
-  margin: 25px auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  width: 50px;
-  opacity: .75;
-  -webkit-transform: scale(.5, .5);
-          transform: scale(.5, .5);
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms;
-  */
-}
-
 .Logo .name {
   display: block;
   font-weight: 400;
@@ -227,10 +208,10 @@ header {
   height: 250px;
 }
 
-a {
+/*a {
   color: inherit;
   text-decoration: none;
-}
+}*/
 
 a:hover {
   color: white;
@@ -271,3 +252,5 @@ ul.posts li {
 
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
+
+p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
