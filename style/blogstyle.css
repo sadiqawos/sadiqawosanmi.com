@@ -140,11 +140,11 @@ header {
   height: 250px;
 }
 
-.homelink {
+a.homelink {
 	color: inherit;
 	text-decoration: none;
 }
-.homelink:hover {
+a.homelink:hover {
 	
 }
 	
