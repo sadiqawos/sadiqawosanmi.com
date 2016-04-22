@@ -253,4 +253,12 @@ ul.posts li {
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
 
+.homelink {
+	color: inherit;
+	text-decoration: none;
+}
+.homelink:hover {
+	
+}
+
 p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
