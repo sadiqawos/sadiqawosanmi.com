@@ -177,8 +177,19 @@ body {
   font-weight: 300;
   letter-spacing: 0.1px;
   padding: 0;
+  margin: 60px auto;
+  width: 70%;
+  background: #0000000;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body.FullWidthContainer {
+  font: 16px/1.5 "Open Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  padding: 0;
   margin: 0;
-  /*090909*/
   background: #0000000;
   color: #444;
   -webkit-font-smoothing: antialiased;
