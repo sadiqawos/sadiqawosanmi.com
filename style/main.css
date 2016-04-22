@@ -208,15 +208,6 @@ header {
   height: 200px;
 }
 
-/*a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-}*/
-
 @media screen and (max-width: 960px) {
   .Images {
     -webkit-column-count: 1;
