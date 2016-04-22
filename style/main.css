@@ -253,11 +253,11 @@ ul.posts li {
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
 
-a.homelink {
+a.HomeLink {
 	color: inherit;
 	text-decoration: none;
 }
-a.homelink:hover {
+a.HomeLink:hover {
 	
 }
 
