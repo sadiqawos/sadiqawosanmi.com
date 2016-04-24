@@ -189,6 +189,14 @@ body {
 	margin: auto;
 }
 
+.fullwidth_cover{
+	width: 100%;
+	height: 250px;
+	background-position: 50% 50%;
+	background-size: cover;
+	position: relative;
+}
+
 img {
   -webkit-user-select: none;
      -moz-user-select: none;
