@@ -122,12 +122,9 @@ body {
 	margin: auto;
 }
 
-.fullwidth_cover{
-	background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 0;
-    padding-top: 66.64%;
+img.fullwidth_cover{
+	max-width: 100%;
+    height: auto;
 }
 
 img {
