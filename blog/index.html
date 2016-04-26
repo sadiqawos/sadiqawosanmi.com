@@ -6,9 +6,12 @@ title: Blog of Sadiq Awosanmi
 	<ul class="posts">
 	  {% for post in site.posts %}
 	    <li>
-			<span>{{ post.date | date_to_string }}</span>
-			<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
+			<span class="post_meta">{{ post.date | date_to_string }}</span>
+			{% if page.img %}
+				<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
+			{% endif %}
 			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			{{ post.excerpt }}
 			<hr>
 		</li>
 	  {% endfor %}
