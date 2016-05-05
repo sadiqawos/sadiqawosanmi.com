@@ -77,6 +77,10 @@ footer {
   display: flex;
 }
 
+.Nav{
+	padding-right: 20px;
+}
+
 .Logo {
   color: #646363;
   cursor: default;
