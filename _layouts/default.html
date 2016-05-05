@@ -8,6 +8,17 @@
   </head>
 
   <body>
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	  <div class="overlay-content">
+		<a href="#">About</a>
+		<a href="#">Blog</a>
+		<a href="#">Cars</a>
+		<a href="#">Bikes</a>
+		<a href="#">Photography</a>
+		<a href="#">Adventure</a>
+	  </div>
+	</div>
     <header>
     <div class="Nav">
     	<span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ </span>
@@ -23,5 +34,14 @@
     {{ content }}
 
     <footer></footer>
+	<script>
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+</script>
   </body>
 </html>
