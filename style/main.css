@@ -116,15 +116,15 @@ footer {
     color: #f1f1f1;
 }
 
-.post.post_meta {
+.posts.post_meta {
 	text-decoration: none;
     color: #999
 }
-.post a {
+.posts a {
 	text-decoration: none; 
 	color: black; 
 }
-.post a:hover { 
+.posts a:hover { 
 	text-decoration: none; 
 }
 
