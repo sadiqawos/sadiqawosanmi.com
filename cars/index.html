@@ -4,12 +4,15 @@ title: Cars
 ---
 <div class="ContentContainer">
 	<div class="Collections">
-		{% for post in site.posts.car %}
-		<div class="CarCollection" style="background-image: url('/resources/{{ post.img }}')">
+		<div class="CarCollection" style="background-image: url('/resources/240sx.jpg')">
           <div class="contents">
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="240sx/">'89 Nissan 240sx</a>
           </div>
         </div>
-		{% endfor %}
+		<div class="CarCollection" style="background-image: url('/resources/mx5home.png')">
+          <div class="contents">
+            <a href="mx5/">'16 Mazda MX5</a>
+          </div>
+        </div>
       </div>
 </div>
