@@ -129,7 +129,8 @@ footer {
 .posts.post_meta {
 	text-decoration: none;
     color: #999
-	font-size: 20px;
+	font-size: 14px;
+	opacity: .3;
 }
 .posts a {
 	text-decoration: none; 

@@ -7,12 +7,14 @@ title: Blog of Sadiq Awosanmi
 	  {% for post in site.posts %}
 	    <li>
 			<hr>
-			<span class="post_meta">{{ post.date | date_to_string }}</span>
 			{% if post.img %}
 				<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
 			{% endif %}
 			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-			{{ post.excerpt }}
+			<div class="post">
+				{{ post.excerpt }}
+			</div>
+			<span class="post_meta">{{ post.date | date_to_string }}</span>
 		</li>
 	  {% endfor %}
 	</ul>
