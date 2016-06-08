@@ -126,17 +126,6 @@ footer {
     color: #f1f1f1;
 }
 
-.posts.post_meta {
-	text-decoration: none;
-    color: #999
-	font-size: 14px;
-	opacity: .3;
-}
-
-.post.excerpt{
-	opacity: .3;
-}
-
 .closebtn {
     position: absolute;
     top: 20px;
@@ -278,6 +267,18 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+ul.posts.post_meta {
+	text-decoration: none;
+    color: #999
+	font-size: 14px;
+	opacity: .3;
+}
+
+ul.post.excerpt{
+	text-decoration: none;
+	font-size: 14px;
 }
 
 a { text-decoration: none; color: #999; }
