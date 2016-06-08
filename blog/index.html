@@ -3,10 +3,10 @@ layout: default
 title: Blog of Sadiq Awosanmi
 ---
 <div class="ContentContainer">
-	<div class="blog-post">
-		<ul class="posts">
-		  {% for post in site.posts %}
-			<li>
+	<ul class="posts">
+	  {% for post in site.posts %}
+	    <li>
+			<div class="blog-post">
 				<hr>
 				{% if post.img %}
 					<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
@@ -18,8 +18,8 @@ title: Blog of Sadiq Awosanmi
 					</div>
 					<span class="post_meta">{{ post.date | date_to_string }}</span>
 				</div>
-			</li>
-		  {% endfor %}
-		</ul>
-	</div>
+			</div>
+		</li>
+	  {% endfor %}
+	</ul>
 </div>
