@@ -285,6 +285,9 @@ ul.post.excerpt{
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
 
+a.title{
+	font-size: 1.5em;
+}
 a.HomeLink {
 	color: inherit;
 	text-decoration: none;
