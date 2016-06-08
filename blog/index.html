@@ -15,8 +15,8 @@ title: Blog of Sadiq Awosanmi
 				<div class="excerpt">
 					{{ post.excerpt }}
 				</div>
+				<span class="post_meta">{{ post.date | date_to_string }}</span>
 			</div>
-			<span class="post_meta">{{ post.date | date_to_string }}</span>
 		</li>
 	  {% endfor %}
 	</ul>
