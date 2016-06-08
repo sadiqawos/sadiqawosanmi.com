@@ -287,11 +287,9 @@ a.HomeLink {
 	color: inherit;
 	text-decoration: none;
 }
-.a.title{
+a.title{
 	text-decoration: none; 
 	color: black;
-	padding-bottom: 20px;
-	padding-top: 20px;	
 }
 a.HomeLink:hover {
 	
@@ -301,6 +299,8 @@ hr{
 	border: 0;
 	height: 1px;
 	background: #999;
+	padding-bottom: 20px;
+	padding-top: 20px;	
 }
 
 p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
