@@ -10,9 +10,11 @@ title: Blog of Sadiq Awosanmi
 			{% if post.img %}
 				<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
 			{% endif %}
-			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 			<div class="post">
-				{{ post.excerpt }}
+				<a class="title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+				<div class="excerpt">
+					{{ post.excerpt }}
+				</div>
 			</div>
 			<span class="post_meta">{{ post.date | date_to_string }}</span>
 		</li>

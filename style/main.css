@@ -132,9 +132,12 @@ footer {
 	font-size: 14px;
 	opacity: .3;
 }
-.posts a {
+.post.title{
 	text-decoration: none; 
 	color: black; 
+}
+.post.excerpt{
+	opacity: .3;
 }
 .posts a:hover { 
 	text-decoration: none; 
