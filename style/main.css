@@ -181,6 +181,10 @@ body {
 	width: 60%;
 	margin: auto;
 }
+.ContentContainer .blog-post{
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 img.fullwidth_cover{
 	max-width: 100%;
