@@ -9,14 +9,16 @@ title: Blog of Sadiq Awosanmi
 			<hr>
 			<div class="blog-post">
 				{% if post.img %}
-					<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
+				<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
 				{% endif %}
 				<div class="post">
 					<a class="title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-					<div class="excerpt">
-						{{ post.excerpt }}
+					<div class="excerpt-container">
+						<div class="excerpt">
+							{{ post.excerpt }}
+						</div>
+						<span class="post_meta">{{ post.date | date_to_string }}</span>
 					</div>
-					<span class="post_meta">{{ post.date | date_to_string }}</span>
 				</div>
 			</div>
 		</li>
