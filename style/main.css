@@ -185,6 +185,10 @@ body {
 	padding-top: 20px;
     padding-bottom: 20px;
 }
+.excerpt-container{
+	width: 90%;
+    margin: auto;
+}
 
 img.fullwidth_cover{
 	max-width: 100%;
