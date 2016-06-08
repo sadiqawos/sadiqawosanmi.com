@@ -3,21 +3,23 @@ layout: default
 title: Blog of Sadiq Awosanmi
 ---
 <div class="ContentContainer">
-	<ul class="posts">
-	  {% for post in site.posts %}
-	    <li>
-			<hr>
-			{% if post.img %}
-				<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
-			{% endif %}
-			<div class="post">
-				<a class="title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-				<div class="excerpt">
-					{{ post.excerpt }}
+	<div class="blog-post">
+		<ul class="posts">
+		  {% for post in site.posts %}
+			<li>
+				<hr>
+				{% if post.img %}
+					<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
+				{% endif %}
+				<div class="post">
+					<a class="title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+					<div class="excerpt">
+						{{ post.excerpt }}
+					</div>
+					<span class="post_meta">{{ post.date | date_to_string }}</span>
 				</div>
-				<span class="post_meta">{{ post.date | date_to_string }}</span>
-			</div>
-		</li>
-	  {% endfor %}
-	</ul>
+			</li>
+		  {% endfor %}
+		</ul>
+	</div>
 </div>
