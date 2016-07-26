@@ -319,6 +319,15 @@ p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
   max-width: 960px;
   margin: 0 auto;
 }
+
+.about_section {
+	height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 /* ============================================================
   SECTIONS
 ============================================================ */
