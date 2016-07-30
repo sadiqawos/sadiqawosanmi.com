@@ -321,11 +321,15 @@ p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
 }
 
 .about_section {
-	height: 600px;
+	height: 500px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.about_section.content{
+	
 }
 
 /* ============================================================
