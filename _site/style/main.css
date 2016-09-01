@@ -332,8 +332,15 @@ p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
     padding-bottom: 0!important;
 }
 
-.about_section.content{
-	
+.about_section .content{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+  opacity: 0.4;
+  z-index: 15;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* ============================================================
