@@ -2,13 +2,13 @@
 <html>
   <head>
       <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-      <title>{{ page.title}}</title>
+      <title>Adventure</title>
       <link rel="shortcut icon" type="image/x-icon" href="/resources/favicon.ico" />
       <link rel="stylesheet" type="text/css" href="/style/main.css">
   </head>
 
   <body>
-	{% if page.title != "Sadiq Awosanmi" %}
+	
 	<div id="myNav" class="overlay">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 	  <div class="overlay-content">
@@ -21,13 +21,13 @@
 		<a href="https://www.instagram.com/jdm_archeology/">Adventure</a>
 	  </div>
 	</div>
-	{% endif %}
+	
     <header>
-	{% if page.title != "Sadiq Awosanmi" %}
+	
     <div class="Nav">
     	<span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ </span>
     </div>
-	{% endif %}
+	
       <div class="Logo">
         <a class="HomeLink" href="/">
 			<span class="name">S.AWOSANMI</span>
@@ -36,7 +36,11 @@
       </div>
     </header>
 
-    {{ content }}
+    <div class="ContentContainer">
+	<h1>Adventure</h1>
+</div>
+
+
 
     <footer></footer>
 	<script>
