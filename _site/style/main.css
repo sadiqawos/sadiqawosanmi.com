@@ -98,10 +98,9 @@ footer {
     z-index: 99999;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(255,255,255, 1);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .overlay-content {
@@ -115,10 +114,11 @@ footer {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
+	font-family: 'Roboto Mono', monospace;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -187,6 +187,7 @@ body {
 }
 .ContentContainer .blog-post .image{
 	width: 60%;
+
 }
 .excerpt-container{
 	width: 90%;
