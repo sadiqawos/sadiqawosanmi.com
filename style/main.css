@@ -11,7 +11,7 @@
 
 .Collection,
 .Post-teaser {
-  width: 33.33%;
+  width: 50%;
   height: 250px;
   background-position: 50% 50%;
   background-size: cover;
@@ -185,6 +185,9 @@ body {
 	padding-top: 20px;
     padding-bottom: 20px;
 }
+.ContentContainer .blog-post .image{
+	width: 60%;
+}
 .excerpt-container{
 	width: 90%;
     margin: auto;
@@ -333,32 +336,20 @@ p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
 }
 
 .about_section .content{
-		  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-	
+
+  align-items: center;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 15;
   position: absolute;
-  top: 0;
-  left: 0;
+  display: flex;
 }
 
 .about_section .content .text-content{
 	color: white;
 	text-align: left;
 	font-family: 'Roboto Mono', monospace;
+	padding-left: 5%;
 }
 
 .about_section .content .text-content .text1{

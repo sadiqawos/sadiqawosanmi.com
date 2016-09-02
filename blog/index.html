@@ -6,10 +6,11 @@ title: Blog of Sadiq Awosanmi
 	<ul class="posts">
 	  {% for post in site.posts %}
 	    <li>
-			<hr>
 			<div class="blog-post">
 				{% if post.img %}
-				<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
+				<div class="image">
+					<img src="/resources/{{ post.img }}" style="max-width: 100%; height: auto;"/>
+				</div>
 				{% endif %}
 				<div class="post">
 					<div class="excerpt-container">
@@ -21,6 +22,7 @@ title: Blog of Sadiq Awosanmi
 					</div>
 				</div>
 			</div>
+			<hr>
 		</li>
 	  {% endfor %}
 	</ul>
