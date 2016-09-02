@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sadiq Awosanmi, Adventure in space, Launches Site"
+title: 
 date: 2016-04-20
 ---
 
