@@ -255,6 +255,13 @@ header {
   }
 }
 
+@media screen and (max-width: 600px) {
+	    .Collection,
+.Post-teaser {
+  width: 100%;
+}
+}
+
 @media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
