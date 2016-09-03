@@ -1,96 +1,31 @@
-.Collections,
-.Posts {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+.Logo {
+  color: #646363;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.Collection,
-.Post-teaser {
-  width: 50%;
-  height: 250px;
-  background-position: 50% 50%;
-  background-size: cover;
-  position: relative;
-}
-.CarCollection {
-	width: 50%;
-  height: 250px;
-  background-position: 50% 50%;
-  background-size: cover;
-  position: relative;
-}
-.Collection .contents,
-.Post-teaser .contents,
-.CarCollection .contents {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  -webkit-transition: opacity 250ms ease-out;
-  transition: opacity 250ms ease-out;
-  opacity: 0;
-  z-index: 15;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.Collection:hover .contents,
-.Post-teaser:hover .contents,
-.CarCollection:hover .contents {
-  opacity: 1;
-}
-
-.Collection .contents a,
-.Post-teaser .contents a, 
-.CarCollection .contents a {
-  color: white;
+.Logo .name {
+  display: block;
+  font-weight: 400;
   text-transform: uppercase;
-  text-decoration: none;
-  font-size: .7rem;
-  letter-spacing: 1px;
-  border: 2px solid rgba(255, 255, 255, .25);
-  padding: 10px 25px;
+  font-size: 1rem;
+  letter-spacing: 2px;
 }
 
-.Collection .contents a:hover,
-.Post-teaser .contents a:hover,
-.CarCollection .contents a:hover {
-  background: white;
-  color: black;
-  text-decoration: none;
+.Logo .text {
+  display: block;
+  text-transform: uppercase;
+  font-size: .55rem;
+  letter-spacing: 8.6px;
+  opacity: .3;
 }
 
-footer {
-  font-family: "Roboto";
-  padding: 50px 25px;
-  font-size: .75rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.Nav{
-	padding-right: 20px;
-}
-
+/*
+========================================
+*/
 .overlay {
     height: 100%;
     width: 0;
@@ -137,74 +72,13 @@ footer {
 	text-decoration: none;
 }
 
-.Logo {
-  color: #646363;
-  cursor: default;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.Nav{
+	padding-right: 20px;
 }
 
-.Logo .name {
-  display: block;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 2px;
-}
-
-.Logo .text {
-  display: block;
-  text-transform: uppercase;
-  font-size: .55rem;
-  letter-spacing: 8.6px;
-  opacity: .3;
-}
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font: 16px/1.5 "Open Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.1px;
-  padding: 0;
-  margin: 0px auto;	
-  background: #fff;
-  color: #444;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-.ContentContainer{
-	width: 60%;
-	margin: auto;
-}
-.ContentContainer .blog-post{
-	padding-top: 20px;
-    padding-bottom: 20px;
-}
-.ContentContainer .blog-post .image{
-	width: 60%;
-
-}
-.excerpt-container{
-	width: 90%;
-    margin: auto;
-}
-
-img.fullwidth_cover{
-	max-width: 100%;
-    height: auto;
-}
-
-img {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
+/*
+========================================
+*/
 
 header {
   display: -webkit-box;
@@ -221,6 +95,239 @@ header {
           align-items: center;
   height: 150px;
 }
+
+body {
+  font: 16px/1.5 "Open Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  padding: 0;
+  margin: 0px auto;	
+  background: #fff;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+footer {
+  font-family: "Roboto";
+  padding: 50px 25px;
+  font-size: .75rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*
+========================================
+*/
+
+.Collections
+{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.Collection
+{
+  width: 50%;
+  height: 250px;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+
+.Collection .contents{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 250ms ease-out;
+  transition: opacity 250ms ease-out;
+  opacity: 0;
+  z-index: 15;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Collection:hover .contents{
+  opacity: 1;
+}
+
+.Collection .contents a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .7rem;
+  letter-spacing: 1px;
+  border: 2px solid rgba(255, 255, 255, .25);
+  padding: 10px 25px;
+}
+
+.Collection .contents a:hover{
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+
+.ContentContainer{
+	width: 60%;
+	margin: auto;
+}
+.ContentContainer .blog-post{
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*
+========================================
+*/
+
+ul.Posts { 
+    margin: 20px auto 40px; 
+    font-size: 1em;
+	font-family: 'Roboto Mono', monospace;
+}
+
+ul.Posts li {
+    list-style: none;
+}
+
+.blog-post{
+	color: #999
+}
+
+.excerpt-container .title{
+	font-weight: bold;
+	color: #828181
+}
+
+ul.Posts .post_meta {
+
+}
+
+a {
+	text-decoration: none; 
+	color: #999; 
+}
+
+a.title{
+	
+}
+
+
+hr{
+	border: 0;
+	height: 1px;
+	background: #999;
+	opacity: 0.4;
+}
+
+/*
+========================================
+*/
+
+.about_section {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #eee;
+    position: fixed;
+    min-height: 100%;
+	width: 100%;
+    padding-bottom: 0!important;
+}
+
+.about_section .content{
+
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  display: flex;
+}
+
+.about_section .content .text-content{
+	color: white;
+	text-align: left;
+	font-family: 'Roboto Mono', monospace;
+	padding-left: 5%;
+}
+
+.about_section .content .text-content .text1{
+	font-size: 45px;
+	 font-weight: bold;
+}
+
+.about_section .content .text-content .text2{
+	font-size: 20px;
+	 font-weight: regular;
+}
+
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*
+========================================
+*/
 
 @media screen and (max-width: 960px) {
   .Images {
@@ -278,134 +385,4 @@ header {
   section.module.parallax h1 {
     font-size: 160px;
   }
-}
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
-	font-size: 14px;
-}
-
-ul.posts.post_meta {
-	text-decoration: none;
-    color: #999
-	font-size: 14px;
-	opacity: .3;
-}
-
-ul.post.excerpt{
-	text-decoration: none;
-	font-size: 14px;
-}
-
-a { text-decoration: none; color: #999; }
-a:hover { text-decoration: underline; }
-
-a.title{
-	font-size: 1.5em;
-}
-a.HomeLink {
-	color: inherit;
-	text-decoration: none;
-}
-
-a.HomeLink:hover {
-	
-}
-
-hr{
-	border: 0;
-	height: 1px;
-	background: #999;
-	opacity: 0.4;
-}
-
-p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
-
-
-.container {
-	max-width: 960px;
-	margin: 0 auto;
-}
-
-.about_section {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #eee;
-    position: fixed;
-    min-height: 100%;
-	width: 100%;
-    padding-bottom: 0!important;
-}
-
-.about_section .content{
-
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  display: flex;
-}
-
-.about_section .content .text-content{
-	color: white;
-	text-align: left;
-	font-family: 'Roboto Mono', monospace;
-	padding-left: 5%;
-}
-
-.about_section .content .text-content .text1{
-	font-size: 45px;
-	 font-weight: bold;
-}
-
-.about_section .content .text-content .text2{
-	font-size: 20px;
-	 font-weight: regular;
-}
-
-
-/* ============================================================
-  SECTIONS
-============================================================ */
-section.module:last-child {
-  margin-bottom: 0;
-}
-section.module h2 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 30px;
-}
-section.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300;
-}
-section.module p:last-child {
-  margin-bottom: 0;
-}
-section.module.content {
-  padding: 40px 0;
-}
-section.module.parallax {
-  height: 600px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
