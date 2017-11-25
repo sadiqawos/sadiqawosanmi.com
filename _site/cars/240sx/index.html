@@ -62,26 +62,24 @@
     <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="/js/fullscreen.js"></script>
     <script type="text/javascript">
-            $(function() {
-                $('ul.nav a').bind('click',function(event){
-                    var $anchor = $(this);
-                    
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1000,'easeInOutExpo');
-                    event.preventDefault();
-                });
+        $(function () {
+            $('ul.nav a').bind('click', function (event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1000, 'easeInOutExpo');
+                event.preventDefault();
             });
-            $(function() {
-                $('a.backtotop').bind('click',function(event){
-                    var $anchor = $(this);
-                    
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1000,'easeInOutExpo');
-                    event.preventDefault();
-                });
-            });   
+        });
+        $(function () {
+            $('a.backtotop').bind('click', function (event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1000, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
     </script>
 </body>
 
