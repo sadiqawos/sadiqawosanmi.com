@@ -81,7 +81,7 @@ body {
 
 .overlay-content .logo {
     text-decoration: none;
-    font-size: 18rem;
+    font-size: 10rem;
     color: rgba(0, 0, 0, 0.4);
 }
 
@@ -91,7 +91,7 @@ body {
 
 .logo-smaller {
     text-decoration: none;
-    font-size: 8rem;
+    font-size: 6rem;
     color: rgba(0, 0, 0, 1);
 }
 
