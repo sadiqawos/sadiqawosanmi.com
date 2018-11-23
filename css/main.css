@@ -4,7 +4,7 @@ body {
     letter-spacing: 0.1px;
     padding: 0;
     margin: 0px auto;
-    background: #41505c;
+    background: white;
     color: white;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -24,43 +24,10 @@ body {
     background-size: cover;
 }
 
-.fullscreen,
-.content-a {
+.fullscreen {
     width: 100%;
     height: 100%;
     overflow: hidden;
-}
-
-.fullscreen.overflow,
-.fullscreen.overflow .content-a {
-    height: auto;
-    min-height: 100%;
-}
-
-
-/* content centering styles */
-
-.content-a {
-    display: table;
-}
-
-.content-b {
-    display: table-cell;
-    position: relative;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.not-fullscreen {
-    height: 50%;
-}
-
-.overlay {
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
 }
 
 .overlay-black {
@@ -81,130 +48,35 @@ body {
 
 .overlay-content .logo {
     text-decoration: none;
-    font-size: 18rem;
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.overlay-content .logo .smaller {
-    font-size: 10rem;
-}
-
-.logo-smaller {
-    text-decoration: none;
     font-size: 8rem;
-    color: rgba(0, 0, 0, 1);
-}
-
-.logo-smaller .smaller {
-    font-size: 6rem;
-}
-
-.overlay-content ul {
-    word-spacing: 50px;
-}
-
-.overlay-content li {
-    display: inline;
-}
-
-.content-page {
-    background-color: white;
-    color: black;
-    top: 0;
-}
-
-.content-page .logo {
-    height: 300px;
-    text-align: center;
-}
-
-
-/***********about logo***********/
-
-.about-logo {
-    font-size: 20em;
     color: rgba(0, 0, 0, 0.4);
 }
 
-.about-logo .pipe {
-    color: white;
+.overlay-content .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-
-/***********about content***********/
-
-.about-content .title {
-    color: orangered;
-    font-size: 1.5rem;
+.overlay-content .link {
+    margin: 15px;
 }
 
-.about-content .title .smaller {
-    font-weight: bold;
-    color: white;
-}
-
-.about-content .body {
-    color: white;
-    width: 70%;
-    font-size: 1.2rem;
-}
-
-.nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-    text-transform: uppercase;
-    color: orangered;
-}
-
-i {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.scrollable {
-    height: 100px;
-    /* or any value */
-    overflow-y: auto;
-}
-
-.backtotop {
-    color: rgba(0, 0, 0, 0.51);
-    padding-top: 20px;
-}
-
-.nav-logo {
-    padding: 15px;
-    font-size: 5rem;
+.overlay-content .link a {
+    color: #ffffffa1;
 }
 
 @media screen and (max-width:800px) {
     .overlay-content .logo {
         text-decoration: none;
-        font-size: 8rem;
-        color: rgba(0, 0, 0, 0.4);
-    }
-    .overlay-content .logo .smaller {
-        font-size: 5rem;
-    }
-    .overlay-content li {
-        font-size: 1rem;
+        font-size: 6rem;
     }
 }
 
 @media screen and (max-width:400px) {
     .overlay-content .logo {
         text-decoration: none;
-        font-size: 6rem;
+        font-size: 5rem;
         color: rgba(0, 0, 0, 0.4);
-    }
-    .overlay-content .logo .smaller {
-        font-size: 4rem;
-    }
-    .overlay-content li {
-        font-size: .8rem;
     }
 }
