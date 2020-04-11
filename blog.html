@@ -1,0 +1,24 @@
+---
+layout: default
+title: the simple project
+---
+<div class="blog">
+    <div class="post--list">
+        {% for post in site.posts %}
+        <div class="post">
+            {% if post.img %}
+            <div class="post--img" style="background-image:url('/resources/img/{{ post.img }}');"></div>
+            {% endif %}
+            <div class="">
+                <div class="excerpt-container">
+                    <a class="title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                    <div class="excerpt">
+                        {{ post.excerpt }}
+                    </div>
+                    <span class="post_meta">{{ post.date | date: "%-d %B %Y" }}</span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
