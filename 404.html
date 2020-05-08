@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="coming--soon">
+    <div class="coming--soon_body">
+        <div id="redirectBtn" class="coming--soon_body_text">
+            <span class="body_text--big-x">X</span>
+            <span>404 not found!</span>
+        </div>
+    </div>
+</div>
+<script>
+    let redirectBtn = document.getElementById('redirectBtn');
+    redirectBtn.onclick = (event => {
+        console.log('redirect clicked');
+        location.href = '/';
+    });
+</script>

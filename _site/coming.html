@@ -14,7 +14,7 @@
       gtag('config', 'UA-109158978-2');
     </script>
 
-    <title>{{ page.title }}</title>
+    <title></title>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +27,28 @@
 </head>
 
 <body>
-    {{ content }}
+    <div class="coming--soon">
+    <div class="coming--soon_body">
+        <div class="extras">
+            <a href="/" class="logo">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        <div id="redirectBtn" class="coming--soon_body_text">
+            <span>Coming Soon!</span>
+            <span class="body_text--silly">Power transfer is complete - we're on internal power with the launch vehicle at this time. Stand by for Mode One Charlie....</span>
+        </div>
+    </div>
+</div>
+<script>
+    let redirectBtn = document.getElementById('redirectBtn');
+    redirectBtn.onclick = (event => {
+        console.log('redirect clicked');
+        location.href = '/';
+    });
+</script>
 </body>
 
 </html>

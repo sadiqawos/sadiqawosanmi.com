@@ -2,20 +2,15 @@
 layout: default
 ---
 <div class="blog-post">
-
+    <div class="extras">
+        <a href="/" class="logo">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+    </div>
     <div class="blog-post--header" {% if page.img %} style="background-image:url('/resources/img/{{ page.img }}');" {% endif %}>
         <div class="blog-post--header-inner">
-            <div class="overlay--navbar">
-                <div class="overlay--navbar-item">
-                    <a target="_blank"><i class="fa fa-bars"></i></a>
-                </div>
-                <div class="overlay--navbar-item" style="justify-content: center;">
-                    <a target="_blank">-X-</i></a>
-                </div>
-                <div class="overlay--navbar-item" style="justify-content: flex-end;">
-                    <a target="_blank"><i class="fa fa-search"></i></a>
-                </div>
-            </div>
             <div class="blog-post--header-overlay-container">
                 <div class="overlay">
                     <span class="header-overlay--title">{{ page.title }}</span>
@@ -27,13 +22,18 @@ layout: default
                         </div>
                         <div class="header-overlay--right">
                             <span>Excerpt:</span>
-                            {{ page.excerpt }}
+                            {{ page.content | strip_html | truncatewords:35 }}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    {% if page.img and page.img-description %}
+    <div class="blog-post--header-img-source">[{{ page.img-description }}] By: {{ page.img-credits }}</div>
+    {% endif %}
+
     <div class="blog-post--body">
         <div class="blog-post--body-inner">
             {{ content }}
