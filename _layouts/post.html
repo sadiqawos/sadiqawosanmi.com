@@ -2,8 +2,8 @@
 layout: default
 ---
 <div class="blog-post">
-    <div class="extras">
-        <a href="/" class="logo">
+    <div id="navbar" class="extras">
+        <a href="/journal" class="logo">
           <span></span>
           <span></span>
           <span></span>
@@ -18,7 +18,9 @@ layout: default
                         <div class="header-overlay--left">
                             <span>Post No.{{ page.index }}</span>
                             <span>Date: {{ page.date | date: "%-d %B %Y" }}</span>
-                            <span>Categories: {% for category in page.categories %} {{ category }} {% endfor %}</span>
+                            {% if page.categories.size > 0 %}
+                            <span>Categories: {{ page.categories | join: ", "}}</span>
+                            {% endif %}
                         </div>
                         <div class="header-overlay--right">
                             <span>Excerpt:</span>
@@ -39,7 +41,6 @@ layout: default
             {{ content }}
         </div>
     </div>
-    <!-- <span>Tags: {{ page.tags }}</span> -->
 </div>
 <script>
     var prevScrollpos = window.pageYOffset;
