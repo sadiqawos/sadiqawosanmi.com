@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="coming--soon">
+    <div class="coming--soon_body">
+        <div class="extras">
+            <a href="/" class="logo">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        <div id="redirectBtn" class="coming--soon_body_text">
+            <span>Coming Soon!</span>
+            <span class="body_text--silly">Power transfer is complete - we're on internal power with the launch vehicle at this time. Stand by for Mode One Charlie....</span>
+        </div>
+    </div>
+</div>
+<script>
+    let redirectBtn = document.getElementById('redirectBtn');
+    redirectBtn.onclick = (event => {
+        location.href = '/';
+    });
+</script>

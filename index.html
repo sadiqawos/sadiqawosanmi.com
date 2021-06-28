@@ -1,23 +1,99 @@
---- 
-  layout: default 
-  title: Sadiq Awosanmi 
 ---
-<div class="fullscreen background" style="background-image:url('/resources/home_bkg.jpg')" id="home">
+ layout: default
+ title: Sadiq Awosanmi
+---
+<div class="fullscreen-background" style="background-image:url('/resources/img/self-port.jpg')" id="home">
   <div class="overlay-black">
     <div class="overlay-content">
-      <div class="logo">
-        <span>s</span>
-        <span>a</span>
-        <span>d</span>
-        <span>i</span>
-        <span>q</span>
-        <span>.</span>
+      <div class="extras">
+        <a href="/" class="logo">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
       </div>
-      <div class="links">
-        <div class="link"><a href="https://github.com/sadiqawos" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
-        <div class="link"><a href="https://www.instagram.com/sadiq.awos/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
-        <div class="link"><a href="https://www.youtube.com/c/SadiqAwosanmi" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a></div>
+      <div class="nav-bar">
+        <a href="/journal">journal</a> /
+        <a href="/coming"> gallery experience</a>
+      </div>
+      <div class="content">
+        <div class="main-body">
+          <div class="scoll-text">
+            <div class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters">sadiq</span>
+            </div>
+          </div>
+          <div class="about-me">
+            <div class="inner-container">
+              <div class="about-me-wrapper">
+                <span class="about-me-title">Software Engineer</span>
+                <span>Advocate of human centric technology systems</span>
+              </div>
+              <div class="about-me-wrapper">
+                <span class="about-me-title">Artist</span>
+                <span>Exploring the simple passing of time</span>
+              </div>
+              <div class="about-me-wrapper">
+                <span class="about-me-title">Entrepreneur</span>
+                <span>Founder @NōwnPOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="links">
+          <div class="link"><a href="https://github.com/sadiqawos" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+          <div class="link"><a href="https://www.instagram.com/sadiq.awos/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<link rel="stylesheet" type="text/css" href="/css/home.css">
+<script>
+  // Wrap every letter in a span
+  var textWrapper = document.querySelector('.main-body .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+  anime.timeline({loop: false})
+    .add({
+      targets: '.main-body .line',
+      scaleY: [0,1],
+      opacity: [0.5,1],
+      easing: "easeOutExpo",
+      duration: 700
+    })
+    .add({
+      targets: '.main-body .line',
+      translateX: [0, document.querySelector('.main-body .letters').getBoundingClientRect().width + 10],
+      easing: "easeOutExpo",
+      duration: 700,
+      delay: 100
+    }).add({
+      targets: '.main-body .letter',
+      opacity: [0,1],
+      easing: "easeOutExpo",
+      duration: 600,
+      offset: '-=775',
+      delay: (el, i) => 34 * (i+1)
+    }).add({
+      targets: '.main-body .line',
+      opacity: 0,
+      duration: 500,
+      easing: "easeOutExpo",
+      delay: 100
+    }).add({
+      targets: '.main-body .line',
+      opacity: 1,
+      duration: 500,
+      easing: "easeOutExpo",
+      delay: 100
+    }).add({
+      targets: '.main-body .line',
+      opacity: 0,
+      duration: 500,
+      easing: "easeOutExpo",
+      delay: 100
+    });
+</script>

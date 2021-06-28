@@ -1,3 +1,5 @@
 name: Sadiq Awosanmi
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /journal/:year/:month/:day/:title
+timezone: America/Toronto
+excerpt_separator: <!--more-->

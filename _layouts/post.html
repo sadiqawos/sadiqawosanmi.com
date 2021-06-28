@@ -1,16 +1,57 @@
 ---
 layout: default
 ---
-<div>
-	{% if page.img %}
-	<section class="module parallax" style="background-image: url('/resources/{{ page.img }}')">
-			<h1>Theraphy</h1>
-	</section>
-	{% endif %}
-	<div class="ContentContainer">			
-		<div class="post">
-		  {{ content }}
-		</div>
-	</div>
-</div>
+<div class="blog-post">
+    <div id="navbar" class="extras">
+        <a href="/journal" class="logo">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+    </div>
+    <div class="blog-post--header" {% if page.img %} style="background-image:url('/resources/img/{{ page.img }}');" {% endif %}>
+        <div class="blog-post--header-inner">
+            <div class="blog-post--header-overlay-container">
+                <div class="overlay">
+                    <span class="header-overlay--title">{{ page.title }}</span>
+                    <div class="header-overlay--body">
+                        <div class="header-overlay--left">
+                            <span>Post No.{{ page.index }}</span>
+                            <span>Date: {{ page.date | date: "%-d %B %Y" }}</span>
+                            {% if page.categories.size > 0 %}
+                            <span>Categories: {{ page.categories | join: ", "}}</span>
+                            {% endif %}
+                        </div>
+                        <div class="header-overlay--right">
+                            <span>Excerpt:</span>
+                            {{ page.content | strip_html | truncatewords:35 }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    {% if page.img and page.img-description %}
+    <div class="blog-post--header-img-source">[{{ page.img-description }}] By: {{ page.img-credits }}</div>
+    {% endif %}
+
+    <div class="blog-post--body">
+        <div class="blog-post--body-inner">
+            {{ content }}
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" type="text/css" href="/css/blog.css">
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
