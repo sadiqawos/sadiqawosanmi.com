@@ -183,7 +183,7 @@
             padding-top: 3rem;
             padding-bottom: 3rem;
 
-            p:first-child {
+            p:first-of-type {
                 &::first-letter {
                     line-height: 0.6em;
                     float: left;
@@ -192,6 +192,16 @@
                     color: #000;
                     margin-right: 10px;
                     margin-top: 8px;
+                }
+            }
+            a {
+                color: #000;
+
+                &:hover,
+                &:visited,
+                &:link,
+                &:active {
+                    color: #c75a5a;
                 }
             }
         }

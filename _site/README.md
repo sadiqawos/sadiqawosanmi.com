@@ -1,1 +1,0 @@
-# sadiqawos.github.io
