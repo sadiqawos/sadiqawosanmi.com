@@ -24,6 +24,4 @@ I'll talk about philosophy-ish, tech, art (mainly photography), and maybe a litt
 
 Lastly, I hope this becomes an index, a quick access point into all the different hobbies, ideas, or whatever I get involved with.
 
-Stay peachy Helots!
-
 -The Eagle has Landed-
