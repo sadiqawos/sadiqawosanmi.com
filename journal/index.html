@@ -16,7 +16,7 @@ description: where all my written ideas live on the internet
         </div>
     </div>
     <div class="post--list">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
         <div class="post">
             {% if post.img %}
             <div onclick="location.href='{{ post.url }}';" class="post--img" style="background-image:url('/resources/img/{{ post.img }}');">
@@ -34,7 +34,35 @@ description: where all my written ideas live on the internet
         </div>
         {% endfor %}
     </div>
+
+    <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">Prev</a>
+    {% else %}
+        <span>Prev</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <em>{{ page }}</em>
+        {% elsif page == 1 %}
+        <a href="{{ '/' | relative_url }}">{{ page }}</a>
+        {% else %}
+        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
+    {% else %}
+        <span>Next</span>
+    {% endif %}
+    </div>
+    {% endif %}
 </div>
+
 <hr class="blog-footer-divider">
 <div class="blog-footer">
     <p>subscribe <a href="/feed.xml">via RSS</a></p>
