@@ -1,5 +1,13 @@
 name: Sadiq Awosanmi
+description: Sadiq Awosanmi. Software Engineer, Artist, Entrepreneur
 markdown: kramdown
 permalink: /journal/:year/:month/:day/:title
 timezone: America/Toronto
+url: https://sadiqawosanmi.com
+author: Sadiq Awosanmi
 excerpt_separator: <!--more-->
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

@@ -15,7 +15,7 @@ img-description: 1969, Apollo 11 launch
 <h4>Some housekeeping before I get into this episode of feeling cute might delete later</h4>
 
 There is an elephant in the room when you tell someone you are starting a new creative endeavour, whether it be a youtube channel or even something more traditional like photography or fine arts, you get asked questions along the lines of why is this necessary? hasn't this already been done by so and so? this is especially true when any of these forms of expression are shared on the internet.
-
+<!--more-->
 These subtle and maybe even innocent questions we are asking each other is a symptom of something else, I may or may not attempt to dissect this in a later blog entry, but I digress. These questions come from a good place since we have lots of hot trash on the internet, but fundamentally, I still believe that the internet is a great framework for self-expression and exploration of new ideas, both on the creation and discovery fronts.
 
 My purpose in starting a blog in 2021 is simple, I believe that the internet is the best framework for free exchange and exploration of ideas. This blog is simply one of a few places on the internet I choose to share my ideas in written form, long or short. These entries are a sort of contribution to this thing we all care about (If you care about freedom of ideas, then you care about the internet). In honour of this, I've also shared the source code to this self-hosted blog on [github](https://github.com/sadiqawos/sadiqawos.github.io){:target="_blank"}.
