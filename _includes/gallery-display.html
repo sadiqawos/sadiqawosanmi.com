@@ -1,0 +1,10 @@
+<div class="blog-gallery-display">
+    <div class="blog-gallery-display-inner">
+        {% for image in include.images %}
+        <div class="blog-gallery-item" style="background-image: url('/resources/img/{{ image }}');"></div>
+        {% endfor %}
+    </div>
+    {% if include.title %}
+    <span class="blog-gallery-display-title">[{{ include.title }}]</span>
+    {% endif %}
+</div>
