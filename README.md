@@ -1,1 +1,1 @@
-# sadiqawos.github.io
+# sadiqawosanmi.com
