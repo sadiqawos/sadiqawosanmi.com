@@ -28,4 +28,4 @@ echo "title: "${formated_name}"" >> "${post_path}"
 echo "date: $(date --utc +%FT%T.%3NZ)" >> "${post_path}"
 echo "---" >> "${post_path}"
 
-echo "First paragraph goes here and will be used as the excerpt.<!--more--> Everything after the exceprt" >> "${post_path}"
+echo "First paragraph goes here and will be used as the excerpt.<!--more--> Everything after the excerpt" >> "${post_path}"
