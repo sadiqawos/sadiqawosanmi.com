@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<div class="blog-post">
+    <div id="navbar" class="extras">
+        <a href="/journal" class="logo">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+    </div>
+
+    <div class="blog-post--header">
+        <div class="blog-post--header-inner" style="background: none;">
+            <div class="blog-post--header-overlay-container" style="height: 15rem;">
+                <div class="overlay overlay-no-italic">
+                    <span class="header-overlay--title" style="padding-bottom: 0 !important;">{{ page.alt-title }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-post--body">
+        <div class="blog-post--body-inner">
+            {{ content }}
+        </div>
+    </div>
+</div>
+{% include footer.html %}
+<link rel="stylesheet" type="text/css" href="/css/blog-alt.css">
+
+<!-- script to hide nav icon while scrolling -->
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
