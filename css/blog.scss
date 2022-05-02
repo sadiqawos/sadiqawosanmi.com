@@ -261,6 +261,10 @@ blockquote {
         justify-content: center;
         min-height: 100vh;
 
+        hr {
+            width: 100%;
+        }
+
         .blog-post--body-inner {
             display: flex;
             flex-direction: column;
@@ -271,17 +275,17 @@ blockquote {
             padding-top: 3rem;
             padding-bottom: 3rem;
 
-            // p:first-of-type {
-            //     &::first-letter {
-            //         line-height: 0.6em;
-            //         float: left;
-            //         font-size: 3em;
-            //         font-weight: bold;
-            //         color: #000;
-            //         margin-right: 10px;
-            //         margin-top: 8px;
-            //     }
-            // }
+            p:first-of-type {
+                &::first-letter {
+                    line-height: 0.6em;
+                    float: left;
+                    font-size: 3em;
+                    font-weight: bold;
+                    color: #000;
+                    margin-right: 10px;
+                    margin-top: 8px;
+                }
+            }
         }
     }
 }
